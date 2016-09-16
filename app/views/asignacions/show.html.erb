@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Asignacion:</strong>
+  <%= @asignacion.asignacion %>
+</p>
+
+<p>
+  <strong>Detalle asignacion:</strong>
+  <%= @asignacion.detalle_asignacion %>
+</p>
+
+<p>
+  <strong>Subcategorium:</strong>
+  <%= @asignacion.subcategorium %>
+</p>
+
+<%= link_to 'Edit', edit_asignacion_path(@asignacion) %> |
+<%= link_to 'Back', asignacions_path %>

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  fecha_emision: 2016-09-16
+  asignacion_id: 
+  habere_id: 
+  descuento_adicional_id: 
+  bonificacion_id: 
+  descuento_id: 
+  personal_id: 
+
+two:
+  fecha_emision: 2016-09-16
+  asignacion_id: 
+  habere_id: 
+  descuento_adicional_id: 
+  bonificacion_id: 
+  descuento_id: 
+  personal_id: 

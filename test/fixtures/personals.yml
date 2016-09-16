@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre_personal: MyString
+  apellidop_personal: MyString
+  apellidom_personal: MyString
+  rut_personal: 1
+  afp_personal: MyString
+  sistema_salud: MyString
+  personal_activo: false
+  fecha_contratacion: 2016-09-16
+  tipo_contrato: MyString
+  tipo_pago: MyString
+  num_cuenta: 1
+  categorium_id: 
+  centrocosto_id: 
+
+two:
+  nombre_personal: MyString
+  apellidop_personal: MyString
+  apellidom_personal: MyString
+  rut_personal: 1
+  afp_personal: MyString
+  sistema_salud: MyString
+  personal_activo: false
+  fecha_contratacion: 2016-09-16
+  tipo_contrato: MyString
+  tipo_pago: MyString
+  num_cuenta: 1
+  categorium_id: 
+  centrocosto_id: 

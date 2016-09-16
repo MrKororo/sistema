@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Fecha emision:</strong>
+  <%= @liquidacion.fecha_emision %>
+</p>
+
+<p>
+  <strong>Asignacion:</strong>
+  <%= @liquidacion.asignacion %>
+</p>
+
+<p>
+  <strong>Habere:</strong>
+  <%= @liquidacion.habere %>
+</p>
+
+<p>
+  <strong>Descuento adicional:</strong>
+  <%= @liquidacion.descuento_adicional %>
+</p>
+
+<p>
+  <strong>Bonificacion:</strong>
+  <%= @liquidacion.bonificacion %>
+</p>
+
+<p>
+  <strong>Descuento:</strong>
+  <%= @liquidacion.descuento %>
+</p>
+
+<p>
+  <strong>Personal:</strong>
+  <%= @liquidacion.personal %>
+</p>
+
+<%= link_to 'Edit', edit_liquidacion_path(@liquidacion) %> |
+<%= link_to 'Back', liquidacions_path %>

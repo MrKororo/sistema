@@ -1,0 +1,1 @@
+json.array! @registro_acciones, partial: 'registro_acciones/registro_accione', as: :registro_accione

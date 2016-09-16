@@ -1,0 +1,29 @@
+<%= form_for(@bonificacion) do |f| %>
+  <% if @bonificacion.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bonificacion.errors.count, "error") %> prohibited this bonificacion from being saved:</h2>
+
+      <ul>
+      <% @bonificacion.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :detalle_bono %><br>
+    <%= f.text_field :detalle_bono %>
+  </div>
+  <div class="field">
+    <%= f.label :bono %><br>
+    <%= f.number_field :bono %>
+  </div>
+  <div class="field">
+    <%= f.label :subcategorium_id %><br>
+    <%= f.text_field :subcategorium_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

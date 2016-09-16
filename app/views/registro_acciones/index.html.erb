@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Registro Acciones</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Accion</th>
+      <th>Detalle</th>
+      <th>Fecha</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @registro_acciones.each do |registro_accione| %>
+      <tr>
+        <td><%= registro_accione.user %></td>
+        <td><%= registro_accione.accion %></td>
+        <td><%= registro_accione.detalle %></td>
+        <td><%= registro_accione.fecha %></td>
+        <td><%= link_to 'Show', registro_accione %></td>
+        <td><%= link_to 'Edit', edit_registro_accione_path(registro_accione) %></td>
+        <td><%= link_to 'Destroy', registro_accione, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Registro accione', new_registro_accione_path %>

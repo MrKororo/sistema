@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Descuento afp:</strong>
+  <%= @descuento.descuento_afp %>
+</p>
+
+<p>
+  <strong>Descuento salud:</strong>
+  <%= @descuento.descuento_salud %>
+</p>
+
+<p>
+  <strong>Sindicato:</strong>
+  <%= @descuento.sindicato %>
+</p>
+
+<p>
+  <strong>Impuesto:</strong>
+  <%= @descuento.impuesto %>
+</p>
+
+<p>
+  <strong>Cotizacion voluntaria:</strong>
+  <%= @descuento.cotizacion_voluntaria %>
+</p>
+
+<%= link_to 'Edit', edit_descuento_path(@descuento) %> |
+<%= link_to 'Back', descuentos_path %>

@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>User:</strong>
+  <%= @registro_accione.user %>
+</p>
+
+<p>
+  <strong>Accion:</strong>
+  <%= @registro_accione.accion %>
+</p>
+
+<p>
+  <strong>Detalle:</strong>
+  <%= @registro_accione.detalle %>
+</p>
+
+<p>
+  <strong>Fecha:</strong>
+  <%= @registro_accione.fecha %>
+</p>
+
+<%= link_to 'Edit', edit_registro_accione_path(@registro_accione) %> |
+<%= link_to 'Back', registro_acciones_path %>

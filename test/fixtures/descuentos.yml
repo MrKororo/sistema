@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  descuento_afp: 1
+  descuento_salud: 1
+  sindicato: 1
+  impuesto: 1
+  cotizacion_voluntaria: 1
+
+two:
+  descuento_afp: 1
+  descuento_salud: 1
+  sindicato: 1
+  impuesto: 1
+  cotizacion_voluntaria: 1

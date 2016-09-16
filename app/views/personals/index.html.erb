@@ -1,0 +1,51 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Personals</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Nombre personal</th>
+      <th>Apellidop personal</th>
+      <th>Apellidom personal</th>
+      <th>Rut personal</th>
+      <th>Afp personal</th>
+      <th>Sistema salud</th>
+      <th>Personal activo</th>
+      <th>Fecha contratacion</th>
+      <th>Tipo contrato</th>
+      <th>Tipo pago</th>
+      <th>Num cuenta</th>
+      <th>Categorium</th>
+      <th>Centrocosto</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @personals.each do |personal| %>
+      <tr>
+        <td><%= personal.nombre_personal %></td>
+        <td><%= personal.apellidop_personal %></td>
+        <td><%= personal.apellidom_personal %></td>
+        <td><%= personal.rut_personal %></td>
+        <td><%= personal.afp_personal %></td>
+        <td><%= personal.sistema_salud %></td>
+        <td><%= personal.personal_activo %></td>
+        <td><%= personal.fecha_contratacion %></td>
+        <td><%= personal.tipo_contrato %></td>
+        <td><%= personal.tipo_pago %></td>
+        <td><%= personal.num_cuenta %></td>
+        <td><%= personal.categorium %></td>
+        <td><%= personal.centrocosto %></td>
+        <td><%= link_to 'Show', personal %></td>
+        <td><%= link_to 'Edit', edit_personal_path(personal) %></td>
+        <td><%= link_to 'Destroy', personal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Personal', new_personal_path %>

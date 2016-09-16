@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  detalle_bono: MyString
+  bono: 1
+  subcategorium_id: 
+
+two:
+  detalle_bono: MyString
+  bono: 1
+  subcategorium_id: 

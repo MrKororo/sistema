@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre_centro: MyString
+  codigo_centro: MyString
+  detalle_centro: MyString
+
+two:
+  nombre_centro: MyString
+  codigo_centro: MyString
+  detalle_centro: MyString

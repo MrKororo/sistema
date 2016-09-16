@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Bonificacions</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Detalle bono</th>
+      <th>Bono</th>
+      <th>Subcategorium</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @bonificacions.each do |bonificacion| %>
+      <tr>
+        <td><%= bonificacion.detalle_bono %></td>
+        <td><%= bonificacion.bono %></td>
+        <td><%= bonificacion.subcategorium %></td>
+        <td><%= link_to 'Show', bonificacion %></td>
+        <td><%= link_to 'Edit', edit_bonificacion_path(bonificacion) %></td>
+        <td><%= link_to 'Destroy', bonificacion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Bonificacion', new_bonificacion_path %>

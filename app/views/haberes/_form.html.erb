@@ -1,0 +1,25 @@
+<%= form_for(@habere) do |f| %>
+  <% if @habere.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@habere.errors.count, "error") %> prohibited this habere from being saved:</h2>
+
+      <ul>
+      <% @habere.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :sueldo_base %><br>
+    <%= f.number_field :sueldo_base %>
+  </div>
+  <div class="field">
+    <%= f.label :subcategorium_id %><br>
+    <%= f.text_field :subcategorium_id %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

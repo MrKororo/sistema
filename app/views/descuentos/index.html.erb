@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Descuentos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Descuento afp</th>
+      <th>Descuento salud</th>
+      <th>Sindicato</th>
+      <th>Impuesto</th>
+      <th>Cotizacion voluntaria</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @descuentos.each do |descuento| %>
+      <tr>
+        <td><%= descuento.descuento_afp %></td>
+        <td><%= descuento.descuento_salud %></td>
+        <td><%= descuento.sindicato %></td>
+        <td><%= descuento.impuesto %></td>
+        <td><%= descuento.cotizacion_voluntaria %></td>
+        <td><%= link_to 'Show', descuento %></td>
+        <td><%= link_to 'Edit', edit_descuento_path(descuento) %></td>
+        <td><%= link_to 'Destroy', descuento, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Descuento', new_descuento_path %>
