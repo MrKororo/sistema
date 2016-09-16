@@ -6,6 +6,7 @@ Rails.application.routes.draw do
   get 'logout', to: 'sessions#destroy', as: 'logout'
   
   get 'page/index'
+  get '/index' => redirect('page/index')
   root 'page#index'
 
   resources :liquidacions

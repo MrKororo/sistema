@@ -7,4 +7,12 @@ class ApplicationController < ActionController::Base
     User.where(id: session[:user_id]).first
   end
   helper_method :current_user
+  def index
+		@persona = Personal.all
+	end
+
+	def lastcreated
+		@persona = Personal.order("created_at DESC").limit(4)
+	end
+helper_method :lastcreated
 end
