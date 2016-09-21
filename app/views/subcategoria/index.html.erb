@@ -14,7 +14,7 @@
   <tbody>
     <% @subcategoria.each do |subcategorium| %>
       <tr>
-        <td><%= subcategorium.categorium %></td>
+        <td><%= subcategorium.categorium.categoria %></td>
         <td><%= subcategorium.subcategoria %></td>
         <td><%= link_to 'Show', subcategorium %></td>
         <td><%= link_to 'Edit', edit_subcategorium_path(subcategorium) %></td>

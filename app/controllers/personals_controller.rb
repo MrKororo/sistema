@@ -7,6 +7,17 @@ class PersonalsController < ApplicationController
     @personals = Personal.all
   end
 
+def trueToAct(boolean)
+  if boolean == true
+     return 'Activo'
+   else
+     return 'Inactivo'
+   end
+end
+helper_method :trueToAct
+
+
+
   # GET /personals/1
   # GET /personals/1.json
   def show

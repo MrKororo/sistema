@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
-
-
+#crea seed de la data ya ingresada en el sistema
+gem 'seed_dump'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.5'
 # Use mysql as the database for Active Record

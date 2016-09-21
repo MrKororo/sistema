@@ -13,7 +13,7 @@
 
   <div class="field">
     <%= f.label :categorium_id %><br>
-    <%= f.text_field :categorium_id %>
+   <%= collection_select(:subcategorium, :categorium_id, Categorium.all, :id, :categoria, {:prompt => 'Seleccione la categoria'}) %> 
   </div>
   <div class="field">
     <%= f.label :subcategoria %><br>

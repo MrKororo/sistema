@@ -32,12 +32,12 @@
 
 <p>
   <strong>Personal activo:</strong>
-  <%= @personal.personal_activo %>
+  <%= trueToAct(@personal.personal_activo) %>
 </p>
 
 <p>
   <strong>Fecha contratacion:</strong>
-  <%= @personal.fecha_contratacion %>
+  <%= @personal.fecha_contratacion.strftime("%m/%d/%Y") %>
 </p>
 
 <p>
@@ -57,12 +57,12 @@
 
 <p>
   <strong>Categorium:</strong>
-  <%= @personal.categorium %>
+  <%= @personal.categorium.categoria %>
 </p>
 
 <p>
   <strong>Centrocosto:</strong>
-  <%= @personal.centrocosto %>
+  <%= @personal.centrocosto.nombre_centro %>
 </p>
 
 <%= link_to 'Edit', edit_personal_path(@personal) %> |

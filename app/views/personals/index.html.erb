@@ -31,13 +31,13 @@
         <td><%= personal.rut_personal %></td>
         <td><%= personal.afp_personal %></td>
         <td><%= personal.sistema_salud %></td>
-        <td><%= personal.personal_activo %></td>
-        <td><%= personal.fecha_contratacion %></td>
+        <td><%= trueToAct(personal.personal_activo) %></td>
+        <td><%= personal.fecha_contratacion.strftime("%m/%d/%Y") %></td>
         <td><%= personal.tipo_contrato %></td>
         <td><%= personal.tipo_pago %></td>
         <td><%= personal.num_cuenta %></td>
-        <td><%= personal.categorium %></td>
-        <td><%= personal.centrocosto %></td>
+        <td><%= personal.categorium.categoria %></td>
+        <td><%= personal.centrocosto.nombre_centro %></td>
         <td><%= link_to 'Show', personal %></td>
         <td><%= link_to 'Edit', edit_personal_path(personal) %></td>
         <td><%= link_to 'Destroy', personal, method: :delete, data: { confirm: 'Are you sure?' } %></td>
