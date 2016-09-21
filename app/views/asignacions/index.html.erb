@@ -5,19 +5,21 @@
 <table>
   <thead>
     <tr>
+      <th>Categoria</th>
+      <th>Subcategoria</th>
       <th>Asignacion</th>
       <th>Detalle asignacion</th>
-      <th>Subcategorium</th>
-      <th colspan="3"></th>
+      <th colspan="4"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @asignacions.each do |asignacion| %>
       <tr>
+        <td><%= asignacion.subcategorium.categorium.categoria %></td>
+        <td><%= asignacion.subcategorium.subcategoria %></td>
         <td><%= asignacion.asignacion %></td>
         <td><%= asignacion.detalle_asignacion %></td>
-        <td><%= asignacion.subcategorium %></td>
         <td><%= link_to 'Show', asignacion %></td>
         <td><%= link_to 'Edit', edit_asignacion_path(asignacion) %></td>
         <td><%= link_to 'Destroy', asignacion, method: :delete, data: { confirm: 'Are you sure?' } %></td>

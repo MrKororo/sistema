@@ -4,7 +4,11 @@ class Personal < ActiveRecord::Base
 
   validates_presence_of :nombre_personal, :apellidop_personal, :apellidom_personal
 
-  contrato = ["Contrato de trabajo a plazo fijo", "Contrato de trabajo indefinido", 
+  TIPOS_CONTRATO = ["Contrato de trabajo a plazo fijo", "Contrato de trabajo indefinido", 
   	"Contrato de trabajo transitorio"]
+  AFP_EXISTENTE = ["Bansander", "Cuprum", "Habitat", "Planvital", "Provida", "Santa María"]
+  SISTEMA_SALUD = ['Isapre', "Fonasa"]
+  TIPO_PAGO = ['Deposito cuenta corriente', 'Deposito cuenta vista', 'Cheque']
+
 
 end

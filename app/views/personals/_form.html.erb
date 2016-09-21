@@ -33,12 +33,12 @@
 
   <div class="field">
     <%= f.label :afp_personal %><br>
-    <%= f.text_field :afp_personal %>
+    <%= f.select :afp_personal, Personal::AFP_EXISTENTE %>
   </div>
 
   <div class="field">
     <%= f.label :sistema_salud %><br>
-    <%= f.text_field :sistema_salud %>
+    <%= f.select :sistema_salud, Personal::SISTEMA_SALUD %>
   </div>
 
   <div class="field">
@@ -53,12 +53,12 @@
 
   <div class="field">
     <%= f.label :tipo_contrato %><br>
-    <%= f.text_field :tipo_contrato %>
+    <%= f.select :tipo_contrato, Personal::TIPOS_CONTRATO %>
   </div>
 
   <div class="field">
     <%= f.label :tipo_pago %><br>
-    <%= f.text_field :tipo_pago %>
+    <%= f.select :tipo_pago, Personal::TIPO_PAGO %>
   </div>
 
   <div class="field">
