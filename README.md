@@ -16,3 +16,4 @@ Actualizando en forma constante a partir del dia 16 de septiembre:
 	*Añadidas listas de tipo de contrato, tipo de pago, afp, sistema salud.  
 	*Modificaciones menores a interfaz (ahora se muestra la categoria respectiva en 
 	cada haber, asignacion y bonificacion)  
+	*Solr añadido y funcional para personal  

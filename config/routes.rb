@@ -9,6 +9,13 @@ Rails.application.routes.draw do
   get '/index' => redirect('page/index')
   root 'page#index'
 
+  resources :personals do
+    collection do
+      get :search
+    end
+  end
+
+
   resources :liquidacions
   resources :personals
   resources :centrocostos

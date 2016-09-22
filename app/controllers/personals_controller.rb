@@ -7,16 +7,25 @@ class PersonalsController < ApplicationController
     @personals = Personal.all
   end
 
-def trueToAct(boolean)
-  if boolean == true
-     return 'Activo'
-   else
-     return 'Inactivo'
-   end
-end
-helper_method :trueToAct
+  def trueToAct(boolean)
+    if boolean == true
+       return 'Activo'
+     else
+       return 'Inactivo'
+     end
+  end
+  helper_method :trueToAct
 
+  def search
+    @personals = Personal.search do
+      keywords params[:query]
+    end.results
 
+    respond_to do |format|
+      format.html { render :action => "index" }
+      format.xml  { render :xml => @personal }
+    end
+  end
 
   # GET /personals/1
   # GET /personals/1.json

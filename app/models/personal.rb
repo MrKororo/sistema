@@ -10,5 +10,8 @@ class Personal < ActiveRecord::Base
   SISTEMA_SALUD = ['Isapre', "Fonasa"]
   TIPO_PAGO = ['Deposito cuenta corriente', 'Deposito cuenta vista', 'Cheque']
 
+searchable do
+	text :nombre_personal, :apellidop_personal, :apellidom_personal
+end
 
 end
