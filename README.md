@@ -1,4 +1,4 @@
-# sistemaerase
+# sistema
 Actualizando en forma constante a partir del dia 16 de septiembre:
 
 ###16/septiembre:  
@@ -18,4 +18,9 @@ Actualizando en forma constante a partir del dia 16 de septiembre:
 	cada haber, asignacion y bonificacion)  
 	*Solr añadido y funcional para personal  
 
+###24-25/septiembre:  
+	*Cambio de etiquetas en casi toda la aplicacion (registro de acciones pendiente)  
+	*Prawn instalado  
+	*Metodo para mostrar nombres y apellidos en personal  
 	
+
