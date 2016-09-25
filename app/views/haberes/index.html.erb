@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Haberes</h1>
+<h1>Listando Haberes</h1>
 
 <table>
   <thead>
@@ -18,9 +18,9 @@
         <td><%= habere.subcategorium.categorium.categoria%></td>
         <td><%= habere.subcategorium.subcategoria %></td>
         <td><%= habere.sueldo_base %></td>
-        <td><%= link_to 'Show', habere %></td>
-        <td><%= link_to 'Edit', edit_habere_path(habere) %></td>
-        <td><%= link_to 'Destroy', habere, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', habere %></td>
+        <td><%= link_to 'Editar', edit_habere_path(habere) %></td>
+        <td><%= link_to 'Eliminar', habere, method: :delete, data: { confirm: '¿Esta seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Habere', new_habere_path %>
+<%= link_to 'Nuevo Haber', new_habere_path %>

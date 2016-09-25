@@ -44,6 +44,6 @@
     <%= f.number_field :telefono %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit ( f.object.new_record? ? "Crear" : "Actualizar"), class: "btn" %>
   </div>
 <% end %>

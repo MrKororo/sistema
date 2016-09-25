@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Descuento Adicionals</h1>
+<h1>Listando Descuentos Adic.</h1>
 
 <table>
   <thead>
@@ -16,9 +16,9 @@
       <tr>
         <td><%= descuento_adicional.detalle_descuento %></td>
         <td><%= descuento_adicional.descuento_adicional %></td>
-        <td><%= link_to 'Show', descuento_adicional %></td>
-        <td><%= link_to 'Edit', edit_descuento_adicional_path(descuento_adicional) %></td>
-        <td><%= link_to 'Destroy', descuento_adicional, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', descuento_adicional %></td>
+        <td><%= link_to 'Editar', edit_descuento_adicional_path(descuento_adicional) %></td>
+        <td><%= link_to 'Eliminar', descuento_adicional, method: :delete, data: { confirm: '¿ESta seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -26,4 +26,4 @@
 
 <br>
 
-<%= link_to 'New Descuento adicional', new_descuento_adicional_path %>
+<%= link_to 'Nuevo Descuento adicional', new_descuento_adicional_path %>

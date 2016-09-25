@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Empresas</h1>
+<h1>Empresa</h1>
 
 <table>
   <thead>
@@ -28,9 +28,9 @@
         <td><%= empresa.website %></td>
         <td><%= empresa.rut_empresa %></td>
         <td><%= empresa.telefono %></td>
-        <td><%= link_to 'Show', empresa %></td>
-        <td><%= link_to 'Edit', edit_empresa_path(empresa) %></td>
-        <td><%= link_to 'Destroy', empresa, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', empresa %></td>
+        <td><%= link_to 'Editar', edit_empresa_path(empresa) %></td>
+        <td><%= link_to 'Eliminar', empresa, method: :delete, data: { confirm: '¿Esta seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -38,4 +38,4 @@
 
 <br>
 
-<%= link_to 'New Empresa', new_empresa_path %>
+<%= link_to 'Nueva Empresa', new_empresa_path %>

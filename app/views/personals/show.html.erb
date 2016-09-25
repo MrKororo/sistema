@@ -1,27 +1,27 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Nombre personal:</strong>
+  <strong>Nombre trabajador:</strong>
   <%= @personal.nombre_personal %>
 </p>
 
 <p>
-  <strong>Apellidop personal:</strong>
+  <strong>Apellido paterno:</strong>
   <%= @personal.apellidop_personal %>
 </p>
 
 <p>
-  <strong>Apellidom personal:</strong>
+  <strong>Apellido materno:</strong>
   <%= @personal.apellidom_personal %>
 </p>
 
 <p>
-  <strong>Rut personal:</strong>
+  <strong>Rut trabajador:</strong>
   <%= @personal.rut_personal %>
 </p>
 
 <p>
-  <strong>Afp personal:</strong>
+  <strong>Afp trabajador:</strong>
   <%= @personal.afp_personal %>
 </p>
 
@@ -37,7 +37,7 @@
 
 <p>
   <strong>Fecha contratacion:</strong>
-  <%= @personal.fecha_contratacion.strftime("%m/%d/%Y") %>
+  <%= @personal.fecha_contratacion.strftime("%d/%m/%Y") %>
 </p>
 
 <p>
@@ -56,14 +56,14 @@
 </p>
 
 <p>
-  <strong>Categorium:</strong>
+  <strong>Categoria:</strong>
   <%= @personal.categorium.categoria %>
 </p>
 
 <p>
-  <strong>Centrocosto:</strong>
+  <strong>Centro costo:</strong>
   <%= @personal.centrocosto.nombre_centro %>
 </p>
 
-<%= link_to 'Edit', edit_personal_path(@personal) %> |
-<%= link_to 'Back', personals_path %>
+<%= link_to 'Editar', edit_personal_path(@personal) %> |
+<%= link_to 'Volver', personals_path %>

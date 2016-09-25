@@ -12,10 +12,10 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :categoria %><br>
+    <%= f.label :"Categoria" %><br>
     <%= f.text_field :categoria %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit ( f.object.new_record? ? "Crear" : "Actualizar"), class: "btn" %>
   </div>
 <% end %>

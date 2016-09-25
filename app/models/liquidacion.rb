@@ -5,4 +5,6 @@ class Liquidacion < ActiveRecord::Base
   belongs_to :bonificacion
   belongs_to :descuento
   belongs_to :personal
+
+
 end

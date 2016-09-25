@@ -24,6 +24,6 @@
     <%= f.text_field :detalle_centro %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit ( f.object.new_record? ? "Crear" : "Actualizar"), class: "btn" %>
   </div>
 <% end %>

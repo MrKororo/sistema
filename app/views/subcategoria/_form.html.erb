@@ -12,14 +12,14 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :categorium_id %><br>
+    <%= f.label :"Categoria" %><br>
    <%= collection_select(:subcategorium, :categorium_id, Categorium.all, :id, :categoria, {:prompt => 'Seleccione la categoria'}) %> 
   </div>
   <div class="field">
-    <%= f.label :subcategoria %><br>
+    <%= f.label :"Subcategoria" %><br>
     <%= f.text_field :subcategoria %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit ( f.object.new_record? ? "Crear" : "Actualizar"), class: "btn" %>
   </div>
 <% end %>

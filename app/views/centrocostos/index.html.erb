@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Centrocostos</h1>
+<h1>Listando Centros de costos</h1>
 
 <table>
   <thead>
@@ -18,9 +18,9 @@
         <td><%= centrocosto.nombre_centro %></td>
         <td><%= centrocosto.codigo_centro %></td>
         <td><%= centrocosto.detalle_centro %></td>
-        <td><%= link_to 'Show', centrocosto %></td>
-        <td><%= link_to 'Edit', edit_centrocosto_path(centrocosto) %></td>
-        <td><%= link_to 'Destroy', centrocosto, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', centrocosto %></td>
+        <td><%= link_to 'Editar', edit_centrocosto_path(centrocosto) %></td>
+        <td><%= link_to 'Eliminar', centrocosto, method: :delete, data: { confirm: '¿Esta seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -28,4 +28,4 @@
 
 <br>
 
-<%= link_to 'New Centrocosto', new_centrocosto_path %>
+<%= link_to 'Nuevo Centro', new_centrocosto_path %>

@@ -1,4 +1,7 @@
 source 'https://rubygems.org'
+
+#Generador de pdf
+gem 'prawn'
 #crea seed de la data ya ingresada en el sistema
 gem 'seed_dump'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

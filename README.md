@@ -1,4 +1,4 @@
-# sistema
+# sistemaerase
 Actualizando en forma constante a partir del dia 16 de septiembre:
 
 ###16/septiembre:  
@@ -17,3 +17,5 @@ Actualizando en forma constante a partir del dia 16 de septiembre:
 	*Modificaciones menores a interfaz (ahora se muestra la categoria respectiva en 
 	cada haber, asignacion y bonificacion)  
 	*Solr añadido y funcional para personal  
+
+	

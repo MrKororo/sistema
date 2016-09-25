@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Asignacions</h1>
+<h1>Listando Asignaciones</h1>
 
 <table>
   <thead>
@@ -20,9 +20,9 @@
         <td><%= asignacion.subcategorium.subcategoria %></td>
         <td><%= asignacion.asignacion %></td>
         <td><%= asignacion.detalle_asignacion %></td>
-        <td><%= link_to 'Show', asignacion %></td>
-        <td><%= link_to 'Edit', edit_asignacion_path(asignacion) %></td>
-        <td><%= link_to 'Destroy', asignacion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', asignacion %></td>
+        <td><%= link_to 'Editar', edit_asignacion_path(asignacion) %></td>
+        <td><%= link_to 'Eliminar', asignacion, method: :delete, data: { confirm: '¿Esta seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Asignacion', new_asignacion_path %>
+<%= link_to 'Nueva Asignacion', new_asignacion_path %>

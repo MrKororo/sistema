@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Bonificacions</h1>
+<h1>Listando Bonificaciones</h1>
 
 <table>
   <thead>
@@ -20,9 +20,9 @@
         <td><%= bonificacion.subcategorium.subcategoria %></td>
         <td><%= bonificacion.detalle_bono %></td>
         <td><%= bonificacion.bono %></td>
-        <td><%= link_to 'Show', bonificacion %></td>
-        <td><%= link_to 'Edit', edit_bonificacion_path(bonificacion) %></td>
-        <td><%= link_to 'Destroy', bonificacion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Ver', bonificacion %></td>
+        <td><%= link_to 'Editar', edit_bonificacion_path(bonificacion) %></td>
+        <td><%= link_to 'Eliminar', bonificacion, method: :delete, data: { confirm: '¿Esta seguro?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -30,4 +30,4 @@
 
 <br>
 
-<%= link_to 'New Bonificacion', new_bonificacion_path %>
+<%= link_to 'Nueva Bonificacion', new_bonificacion_path %>

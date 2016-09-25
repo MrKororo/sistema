@@ -12,72 +12,73 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :nombre_personal %><br>
+    <%= f.label :"Nombre" %><br>
     <%= f.text_field :nombre_personal %>
   </div>
 
   <div class="field">
-    <%= f.label :apellidop_personal %><br>
+    <%= f.label :"Apellido Paterno" %><br>
     <%= f.text_field :apellidop_personal %>
   </div>
 
   <div class="field">
-    <%= f.label :apellidom_personal %><br>
+    <%= f.label :"Apellido Materno" %><br>
     <%= f.text_field :apellidom_personal %>
   </div>
 
   <div class="field">
-    <%= f.label :rut_personal %><br>
-    <%= f.number_field :rut_personal %>
+    <%= f.label :"Rut" %><br>
+    <%= f.text_field :rut_personal %>
   </div>
 
   <div class="field">
-    <%= f.label :afp_personal %><br>
+    <%= f.label :"Afp a pertenecer" %><br>
     <%= f.select :afp_personal, Personal::AFP_EXISTENTE %>
   </div>
 
   <div class="field">
-    <%= f.label :sistema_salud %><br>
+    <%= f.label :"Sistema de salud" %><br>
     <%= f.select :sistema_salud, Personal::SISTEMA_SALUD %>
   </div>
 
   <div class="field">
-    <%= f.label :personal_activo %><br>
+    <%= f.label :"Trabajador Activo" %><br>
     <%= f.check_box :personal_activo %>
   </div>
 
   <div class="field">
-    <%= f.label :fecha_contratacion %><br>
+    <%= f.label :"Fecha de contratacion" %><br>
     <%= f.date_select :fecha_contratacion %>
   </div>
 
   <div class="field">
-    <%= f.label :tipo_contrato %><br>
+    <%= f.label :"Tipo de contrato" %><br>
     <%= f.select :tipo_contrato, Personal::TIPOS_CONTRATO %>
   </div>
 
   <div class="field">
-    <%= f.label :tipo_pago %><br>
+    <%= f.label :"Tipo de pago" %><br>
     <%= f.select :tipo_pago, Personal::TIPO_PAGO %>
   </div>
 
   <div class="field">
-    <%= f.label :num_cuenta %><br>
+    <%= f.label :"Numero de cuenta" %><br>
     <%= f.number_field :num_cuenta %>
   </div>
 
   <div class="field">
-    <%= f.label :categorium_id %><br>
+    <%= f.label :"Categoria a la que pertenece" %><br>
     <%= collection_select(:personal, :categorium_id, Categorium.all, :id, :categoria, {:prompt => 'Seleccione la categoria'}) %> 
   </div>
 
   <div class="field">
-    <%= f.label :centrocosto_id %><br>
+    <%= f.label :"Centro de costos" %><br>
     <%= collection_select(:personal, :centrocosto_id, Centrocosto.all, :id, :nombre_centro, {:prompt => 'Seleccione centro de costo'}) %>
   </div>
   
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit ( f.object.new_record? ? "Crear" : "Actualizar"), class: "btn" %>
+    <%= f.submit "Limpiar", :type => "reset" %>
   </div>
 
 <% end %>
