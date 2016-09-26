@@ -22,5 +22,10 @@ Actualizando en forma constante a partir del dia 16 de septiembre:
 	*Cambio de etiquetas en casi toda la aplicacion (registro de acciones pendiente)  
 	*Prawn instalado  
 	*Metodo para mostrar nombres y apellidos en personal  
+
+###26/Septiembre:
+	*Prototipo de liquidacion en pdf  
+	*Añadidos otras AFP  
+
 	
 

@@ -10,6 +10,16 @@ class LiquidacionsController < ApplicationController
   # GET /liquidacions/1
   # GET /liquidacions/1.json
   def show
+    @liquidacion = Liquidacion.find(params[:id])
+    respond_to do |format|
+      format.html
+      format.pdf do
+      pdf = LiquidacionPdf.new(@liquidacion)
+      send_data pdf.render, filename: "liquidacion #{@liquidacion.personal.nombre_apellido}.pdf",
+                            type: "application/pdf",
+                            disposition: "inline"
+      end
+    end
   end
 
   # GET /liquidacions/new

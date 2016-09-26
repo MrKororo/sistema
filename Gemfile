@@ -2,6 +2,9 @@ source 'https://rubygems.org'
 
 #Generador de pdf
 gem 'prawn'
+#generador de tablas para prawn
+gem 'prawn-table'
+
 #crea seed de la data ya ingresada en el sistema
 gem 'seed_dump'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

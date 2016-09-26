@@ -11,8 +11,9 @@ class Personal < ActiveRecord::Base
 
   TIPOS_CONTRATO = ["Contrato de trabajo a plazo fijo", "Contrato de trabajo indefinido", 
   	"Contrato de trabajo transitorio"]
-  AFP_EXISTENTE = ["Bansander", "Cuprum", "Habitat", "Planvital", "Provida", "Santa María"]
-  SISTEMA_SALUD = ['Isapre', "Fonasa"]
+  AFP_EXISTENTE = ["Bansander", "Cuprum", "Habitat", "Planvital", "Provida", "Santa María", "Capital", "Modelo"]
+  SISTEMA_SALUD = ['Banmédica', "Chuquicamata", "Colmena", "Consalud", "Cruz Blanca", "Cruz del Norte", "Optima",
+                   "Fundación", "Fusat", "Masvida", "Río Blanco", "San Lorenzo", "Vida Tres","Fonasa"]
   TIPO_PAGO = ['Deposito cuenta corriente', 'Deposito cuenta vista', 'Cheque']
 
 searchable do
