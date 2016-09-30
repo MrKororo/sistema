@@ -45,7 +45,7 @@
     <% end %>
   </tbody>
 </table>
-
+  
 <br>
-
+<%= will_paginate @personals, previous_label: h("<"), next_label: h(">")%>
 <%= link_to 'Nuevo trabajador', new_personal_path %>

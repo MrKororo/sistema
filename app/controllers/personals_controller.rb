@@ -4,7 +4,8 @@ class PersonalsController < ApplicationController
   # GET /personals
   # GET /personals.json
   def index
-    @personals = Personal.all
+    @personals = Personal.order("nombre_personal").page(params[:page]).per_page(10)
+
   end
 
   def trueToAct(boolean)

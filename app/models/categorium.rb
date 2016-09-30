@@ -1,3 +1,3 @@
 class Categorium < ActiveRecord::Base
-	has_many :subcategorium
+	has_many :subcategorium, :dependent => :destroy
 end

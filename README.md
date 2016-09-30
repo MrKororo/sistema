@@ -27,5 +27,8 @@ Actualizando en forma constante a partir del dia 16 de septiembre:
 	*Prototipo de liquidacion en pdf  
 	*Añadidos otras AFP  
 
-	
+###29/Septiembre:
+	*Añadido will_paginate en Personal  
+	*Se borran en cascada los elementos desde categoria hasta haber, bonificacion, asignacion  
+	*
 
